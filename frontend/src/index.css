@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy-950 text-slate-100 font-sans;
+  }
+}
+
+/* Custom modern scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B132B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263457;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3A506B;
+}
+
+/* Leaflet container customization for dark mode interface */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.75rem;
+  background-color: #070C1B !important;
+  font-family: inherit;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #111C38 !important;
+  color: #F8FAFC !important;
+  border: 1px solid #263457 !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5) !important;
+}
+
+.leaflet-popup-tip {
+  background: #111C38 !important;
+}
+
+.leaflet-popup-content {
+  margin: 12px 14px !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-control-zoom a {
+  background-color: #111C38 !important;
+  color: #E2E8F0 !important;
+  border-color: #263457 !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: #1C2541 !important;
+}
+
+.leaflet-control-attribution {
+  background-color: rgba(11, 19, 43, 0.8) !important;
+  color: #94A3B8 !important;
+  font-size: 10px !important;
+}
+.leaflet-control-attribution a {
+  color: #48CAE4 !important;
+}
+
+/* Print styles for printable disaster report */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}

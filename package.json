@@ -1,0 +1,22 @@
+{
+  "name": "datheon-ai",
+  "version": "1.0.0",
+  "description": "DATHEON AI - Intelligent Risk Analysis. Better Preparedness. Safer Communities. (AI Manthan 2.0)",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "python backend/run_backend.py",
+    "test:backend": "python -m pytest backend/tests -v",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "disaster-management",
+    "flood-risk",
+    "decision-support",
+    "fastapi",
+    "react",
+    "leaflet"
+  ],
+  "author": "DATHEON AI Team",
+  "license": "MIT"
+}
